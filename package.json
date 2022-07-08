@@ -29,6 +29,13 @@
     "vue-tsc": "^0.34.7"
   },
   "lint-staged": {
-    "*.{ts,vue,js,tsx}": "eslint --fix"
+    "*.@(js|ts|tsx)": [
+      "eslint --ext .ts,.tsx,.js --fix",
+      "prettier --write",
+      "gitt add"
+    ],
+    "*.@(yml|yaml)": ["prettier --parser yaml --write"],
+    "*.md": ["prettier --parser markdown --write"],
+    "*.json": ["prettier --parser json --write"]
   }
 }
