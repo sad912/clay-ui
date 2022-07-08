@@ -32,7 +32,7 @@
     "*.@(js|ts|tsx)": [
       "eslint --ext .ts,.tsx,.js --fix",
       "prettier --write",
-      "gitt add"
+      "git add"
     ],
     "*.@(yml|yaml)": ["prettier --parser yaml --write"],
     "*.md": ["prettier --parser markdown --write"],
